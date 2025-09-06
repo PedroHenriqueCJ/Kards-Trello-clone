@@ -6,6 +6,8 @@ https://img.shields.io/badge/Kards-v1.5-0068FF?style=for-the-badge&logo=trello&l
 
 Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada na metodologia Kanban. Desenvolvida com tecnologias modernas, oferece uma experiência intuitiva e altamente produtiva para organização de projetos e fluxos de trabalho.
 
+---
+
 ## ✨ Características Principais
 
 · Interface Drag-and-Drop Intuitiva: Arraste e solte cartões entre colunas com feedback visual
@@ -65,12 +67,16 @@ Instalação
    · Arraste para reorganizar itens
    · Use o ícone de lixeira para excluir
 
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 · HTML5: Estrutura semântica e acessível
 · CSS3: Variáveis CSS, Flexbox, Grid, Animações e Transições
 · JavaScript ES6+: Módulos, Classes, LocalStorage API
 · Google Fonts: Be Vietnam Pro e Nunito para tipografia moderna
+
+---
 
 ## 📁 Estrutura do Projeto
 
@@ -83,6 +89,7 @@ kards/
 ├── assets/             # Imagens e ícones
 └── README.md           # Documentação
 ```
+---
 
 ## ⚙️ Funcionalidades
 
@@ -118,6 +125,8 @@ Interface de Usuário
 · Tema escuro com variáveis CSS customizáveis
 · Animações e transições suaves
 · Feedback visual para todas as interações
+
+---
 
 ## 🔌 API e Estrutura de Dados
 
@@ -179,6 +188,8 @@ eventBus.publish({
 // ADD_LANE, UPDATE_LANE, REMOVE_LANE, MOVE_LANE
 ```
 
+---
+
 ## 🎨 Personalização
 
 Variáveis de Tema CSS
@@ -229,6 +240,8 @@ const board = new Board({
 });
 ```
 
+---
+
 ## 🧩 Desenvolvimento
 
 Estrutura de Classes
@@ -273,6 +286,8 @@ Padrões de Desenvolvimento
 · Persistência: LocalStorage with serialization/deserialization
 · Eventos: Pub/Sub pattern for component communication
 
+--- 
+
 ## 🚀 Deploy
 
 Deploy em Produção
@@ -295,10 +310,3 @@ Deploy em Produção
 3. Implante em seu servidor:
    · Todos os arquivos necessários estão contidos na pasta do projeto
    · Não há dependências externas além das fonts do Google
-
-Hospedagem Recomendada
-
-· Netlify: Drag-and-drop deployment
-· Vercel: Ideal para projetos estáticos
-· GitHub Pages: Gratuito para projetos open source
-· Servidor próprio: Apache/NGINX com gzip compression habilitado
