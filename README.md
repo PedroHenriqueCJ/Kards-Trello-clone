@@ -12,14 +12,14 @@ Kards is a sophisticated web-based task management application built on the Kanb
 
 ## ✨ Key Features
 
-· Intuitive Drag-and-Drop Interface: Drag and drop cards between columns with visual feedback
-· Multiple Project Boards: Organize different projects in separate boards
-· Advanced Data Persistence: Auto-save system with localStorage backup
-· Responsive & Accessible Design: Adaptive interface that works on desktop and mobile
-· Elegant Dark Theme: Dark mode with carefully selected color palette
-· Contextual Menu: Quick actions with right-click for efficient management
-· Notification System: Alerts and confirmations for important actions
-· Advanced Customization: CSS variables for complete appearance customization
+- Intuitive Drag-and-Drop Interface: Drag and drop cards between columns with visual feedback
+- Multiple Project Boards: Organize different projects in separate boards
+- Advanced Data Persistence: Auto-save system with localStorage backup
+- Responsive & Accessible Design: Adaptive interface that works on desktop and mobile
+- Elegant Dark Theme: Dark mode with carefully selected color palette
+- Contextual Menu: Quick actions with right-click for efficient management
+- Notification System: Alerts and confirmations for important actions
+- Advanced Customization: CSS variables for complete appearance customization
 
 ## 🛠️ Tech Stack
 
