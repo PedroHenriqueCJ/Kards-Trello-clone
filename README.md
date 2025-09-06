@@ -1,212 +1,213 @@
-<h1 align="center">🗂️ Kards - Trello Clone</h1>
+Kards - Sistema de Gerenciamento de Tarefas em Quadros Kanban
 
+https://via.placeholder.com/150x50/0068FF/FFFFFF?text=KARDS
 
-![Preview do Projeto](./Kards-Trello-clone/Screenshot.jpg)
+📋 Visão Geral
 
-<div align="center">
+Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada na metodologia Kanban. Com uma interface elegante e recursos avançados, o Kards permite organizar suas atividades em quadros e cartões personalizáveis, proporcionando uma experiência fluida e altamente produtiva.
 
-https://img.shields.io/badge/Version-1.5-blue https://img.shields.io/badge/Build-Passing-brightgreen https://img.shields.io/badge/License-MIT-green https://img.shields.io/badge/Dependencies-None-success https://img.shields.io/badge/Size-50KB-lightgrey https://img.shields.io/badge/Contributions-Welcome-brightgreen
+✨ Características Principais
 
-A sophisticated, production-ready kanban board application for professional task management.
+· Interface Drag-and-Drop: Arraste e solte cartões e itens para uma organização intuitiva
+· Múltiplos Quadros: Crie diferentes quadros para diversos projetos ou categorias
+· Persistência de Dados: Seus dados são salvos automaticamente no navegador
+· Design Responsivo: Interface adaptável que funciona em diferentes dispositivos
+· Modo Escuro: Tema escuro elegante que reduz a fadiga visual
+· Menu Contextual: Ações rápidas com clique direito nos cartões
+· Sistema de Alertas: Notificações para confirmar ações importantes
+· Auto-save: Suas alterações são salvas automaticamente a cada 5 segundos
 
-Live Demo | Report Bug | Request Feature
+🚀 Começando
 
-</div>
+Pré-requisitos
 
-## 📋 Table of Contents
+Navegador web moderno com suporte a JavaScript:
 
-· Overview
-· Key Features
-· Quick Start
-· Architecture
-· Usage Guide
-· API Reference
-· Performance
-· Browser Support
-· Contributing
-· License
-· Support
+· Chrome 60+
+· Firefox 55+
+· Safari 12+
+· Edge 79+
 
----
+Instalação
 
-## 🎯 Overview
+1. Faça o download ou clone o repositório
+2. Extraia os arquivos em uma pasta local
+3. Abra o arquivo index.html em seu navegador
+4. Comece a usar o Kards imediatamente!
 
-Kards is an enterprise-grade kanban board application built with pure HTML5, CSS3, and vanilla JavaScript. Designed for professional task management, it offers a seamless Trello-like experience with zero dependencies, making it lightweight, fast, and secure.
+Como Usar
 
-Why Kards? - Unlike other kanban solutions, Kards is completely dependency-free, ensuring maximum performance, security, and ease of customization for development teams.
+1. Criando seu Primeiro Quadro:
+   · Clique no botão de menu (☰) no canto superior esquerdo
+   · Digite um nome para seu quadro no campo de texto na barra lateral
+   · Clique no botão "+" ou pressione Enter
+2. Adicionando Cartões:
+   · No campo de texto abaixo do título do quadro, digite o nome do cartão
+   · Clique no botão "+" ou pressione Enter
+3. Adicionando Tarefas:
+   · Dentro de cada cartão, clique no campo de texto
+   · Digite o nome da tarefa e pressione Enter
+4. Gerenciando Itens:
+   · Marque/desmarque itens clicando na caixa de seleção
+   · Exclua itens clicando no ícone de lixeira
+   · Use arrastar e soltar para reorganizar itens
+5. Menu Contextual do Cartão:
+   · Clique com o botão direito em qualquer cartão para acessar opções avançadas:
+     · Limpar cartão (remove todas as tarefas)
+     · Duplicar cartão
+     · Excluir cartão
 
+🛠️ Tecnologias Utilizadas
 
----
+· HTML5: Estrutura semântica da aplicação
+· CSS3: Estilização avançada com variáveis CSS e Flexbox
+· JavaScript ES6+: Funcionalidades interativas e lógica de aplicação
+· LocalStorage API: Persistência de dados no navegador
+· Google Fonts: Tipografia moderna (Be Vietnam Pro, Nunito)
 
-## ✨ Key Features
+📁 Estrutura do Projeto
 
-· Multi-Board System: Create and manage unlimited kanban boards with unique configurations
-· Advanced Drag & Drop: Intuitive task management between cards with visual feedback
-· Real-time Auto-save: Configurable data persistence with 5-second intervals
-· Modern Dark UI: Professional interface with smooth animations and transitions
-· Local Storage: Secure client-side data storage with no external dependencies
-· Fully Responsive: Optimized experience across desktop and mobile devices
-· Context Menus: Right-click operations for efficient workflow management
-· Keyboard Shortcuts: Enhanced productivity with comprehensive key commands
-· Customizable: Easy theming through CSS variables and modular architecture
+```
+kards/
+├── index.html          # Arquivo principal HTML
+├── style.css           # Estilos da aplicação
+├── script.js           # Lógica JavaScript da aplicação
+└── README.md           # Documentação do projeto
+```
 
----
+🔧 Personalização
 
-## 🚀 Quick Start
+Temas de Cores
 
-Prerequisites
-
-· Modern web browser (Chrome 60+, Firefox 55+, Safari 12+, Edge 79+)
-· Local server for development (optional but recommended)
-
-Installation
-
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/kards.git
-   cd kards
-   ```
-2. Serve locally using any HTTP server
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx http-server
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-3. Open in browser Navigate to http://localhost:8000 in your preferred browser.
-
----
-
-## 🏗️ Architecture
-
-Core Components
-
-Component Purpose Implementation
-Board Management Multiple workspaces with unique configurations JavaScript Class-based system
-Card System Flexible containers for task organization DOM manipulation with event delegation
-Task Items Individual actionable items with completion tracking Custom data attributes and state management
-Data Persistence Robust localStorage integration JSON serialization/deserialization
-
-Technical Stack
-
-· Frontend: Pure HTML5, CSS3, Vanilla ES6+
-· Icons: Lucide Icons (SVG) for crisp rendering at any resolution
-· Fonts: Google Fonts (Be Vietnam Pro, Nunito) for optimal readability
-· Storage: Browser localStorage API with efficient data structures
-· Build Process: Zero dependencies, no build process required
-
----
-
-## 📋 Usage Guide
-
-Basic Operations
-
-1. Create Board: Click sidebar → "Add Board..."
-2. Add Card: Use "Add Card..." input at bottom of interface
-3. Create Tasks: Click "+" button in any card
-4. Drag & Drop: Reorder tasks within/between cards
-5. Edit Content: Click on any title to modify text
-6. Mark Complete: Click task text to toggle completion status
-
-Keyboard Shortcuts
-
-Shortcut Action Description
-Enter Confirm input/creation Applies to all input fields
-Escape Cancel operations Closes modals and cancels edits
-Click + Drag Move tasks/cards Intuitive drag and drop interface
-
-Context Menu Operations
-
-Right-click on any card to access powerful context menu options:
-
-· Delete Card: Remove card and all its tasks (with confirmation)
-· Clear Card: Remove all tasks from card while preserving the card itself
-· Duplicate Card: Create identical copy with all tasks intact
-
----
-
-## ⚙️ Configuration
-
-Settings Panel
-
-Access settings via the dropdown menu (⋮) in the header:
-
-· Auto-save: Toggle automatic saving (5-second interval)
-· Data Persistence: Enable/disable localStorage functionality
-· Board Limits: Support for up to 512 individual boards
-
-Customization
-
-Theming can be customized by modifying CSS variables in the :root selector:
+Kards utiliza variáveis CSS para cores, facilitando a personalização. Modifique as cores no arquivo CSS:
 
 ```css
 :root {
   --app-container: #0068FF;
   --main-color: #1f1c2e;
   --secondary-color: #4A4A4A;
-  --link-color: #1f1c2e;
-  --link-color-hover: #c3cff4;
-  --projects-section: #fff;
-  --message-box-hover: #fafcff;
-  /* Additional customizable variables... */
+  /* Adicione suas cores personalizadas aqui */
 }
 ```
 
-## 🔧 API Reference
+📊 Estrutura de Dados
 
-Core Methods
+A aplicação utiliza uma estrutura de dados hierárquica:
 
 ```javascript
-// Data management
-saveData()          // Persist current state to localStorage
-loadData()          // Initialize application from storage
-
-// UI operations
-renderBoard(board)  // Display specific board with all cards
-createAlert(text)   // Show user notification with auto-dismiss
-createConfirmDialog(text, callback) // Display confirmation modal
+{
+  "boards": [
+    {
+      "name": "Nome do Quadro",
+      "id": "identificador-único",
+      "cards": [
+        {
+          "name": "Nome do Cartão",
+          "id": "identificador-único",
+          "items": [
+            {
+              "title": "Título da Tarefa",
+              "description": "Descrição opcional",
+              "id": "identificador-único",
+              "isDone": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "currentBoard": 0,
+  "settings": {
+    "userName": "Usuário",
+    "defaultTheme": "blue",
+    "dataPersistence": true
+  }
+}
 ```
 
-Event Handling
+🔄 Funcionalidades Avançadas
 
-· Drag and drop operations: Full HTML5 Drag and Drop API implementation
-· Context menu interactions: Custom right-click handling with prevention of browser defaults
-· Keyboard events: Comprehensive keyboard support for accessibility
-· Click handlers: Efficient event delegation for dynamic content
+Sistema de Auto-save
+
+· Salva automaticamente a cada 5 segundos
+· Pode ser desativado nas configurações
+· Salvamento manual disponível através do botão "Save"
+
+Confirmação de Ações Destrutivas
+
+· Diálogos de confirmação para exclusão de quadros e cartões
+· Prevenção contra perda acidental de dados
+
+Gestão de Estado
+
+· Controle de estado da aplicação através de um objeto centralizado
+· Sistema de identificadores únicos para todos os elementos
+
+🐛 Solução de Problemas
+
+Dados Não Estão Sendo Salvos
+
+· Verifique se o auto-save está ativado
+· Certifique-se de que seu navegador não está bloqueando LocalStorage
+
+Aplicação Não Responde
+
+· Recarregue a página para reinicializar a aplicação
+· Verifique o console do navegador para mensagens de erro (F12)
+
+Problemas de Renderização
+
+· Limpe o cache do navegador (Ctrl+F5)
+· Verifique se JavaScript está habilitado
+
+📝 Notas de Versão
+
+v1.5 (2021)
+
+· Implementação completa do sistema de arrastar e soltar
+· Melhorias na interface do usuário
+· Otimizações de performance
+· Correções de bugs conhecidos
+
+🚧 Próximas Atualizações
+
+· Sincronização em nuvem
+· Compartilhamento de quadros
+· Modo de exibição de calendário
+· Etiquetas e categorias
+· Lembretes e prazos
+· Relatórios e estatísticas
+· API pública para integrações
+· Aplicativos móveis nativos
+
+👥 Contribuição
+
+Contribuições são bem-vindas! Para contribuir com o projeto:
+
+1. Faça um fork do repositório
+2. Crie uma branch para sua feature (git checkout -b feature/AmazingFeature)
+3. Commit suas mudanças (git commit -m 'Add some AmazingFeature')
+4. Push para a branch (git push origin feature/AmazingFeature)
+5. Abra um Pull Request
+
+📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes.
+
+🤝 Suporte
+
+Se você encontrar problemas ou tiver sugestões:
+
+1. Verifique a documentação acima
+2. Procure por issues existentes no repositório
+3. Crie uma nova issue com detalhes do problema ou sugestão
+
+📞 Contato
+
+· Email: [seu-email@provedor.com]
+· Site: [https://seu-site.com]
+· Twitter: [@seu-usuario]
 
 ---
 
-## 📊 Performance
-
-Kards is meticulously optimized for performance:
-
-· Efficient DOM updates: Minimal reflows and repaints through strategic rendering
-· Memory management: Proper event listener cleanup and garbage collection
-· Smooth animations: CSS transitions and transformations for 60fps performance
-· Fast load times: Minimal bundle size (~50KB) with instant initialization
-
----
-
-## 🚦 Browser Support
-
-Browser Minimum Version Support Level
-Chrome 60+ ✅ Fully Supported
-Firefox 55+ ✅ Fully Supported
-Safari 12+ ✅ Fully Supported
-Edge 79+ ✅ Fully Supported
-
----
-
-Kards - Professional task management made simple. Built with modern web standards and attention to detail.
-
-<div align="center">
-
-Optimize your workflow with Kards
-
-⬆ Back to Top
-
-</div>
+Kards - Organize. Priorize. Produza.
