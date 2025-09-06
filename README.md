@@ -1,7 +1,7 @@
 <h1 align="center">🗂️ Kards - Trello Clone</h1>
 
 
-![Descrição da Imagem](./Screenshot.png)
+![Preview do Projeto](./LANDING%20PAGE/screenshot.png)
 
 <div align="center">
 
