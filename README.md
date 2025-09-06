@@ -1,139 +1,138 @@
-<h1 align="center"> Kards - Trello Clone</h1>
+Kards - Trello Clone
 
-<img width="1521" height="575" alt="Image" src="https://github.com/user-attachments/assets/5d1d97fb-6e49-4046-9e31-57c0a2262b41" />
+<p align="center">
+  <img width="1521" height="575" alt="Kards App Screenshot" src="https://github.com/user-attachments/assets/5d1d97fb-6e49-4046-9e31-57c0a2262b41" />
+</p>
 
+📋 Project Overview
 
-## 📋 Visão Geral do Projeto
-
-Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada na metodologia Kanban. Desenvolvida com tecnologias modernas, oferece uma experiência intuitiva e altamente produtiva para organização de projetos e fluxos de trabalho.
+Kards is a sophisticated web-based task management application built on the Kanban methodology. Developed with modern technologies, it offers an intuitive and highly productive experience for project organization and workflow management.
 
 ---
 
+✨ Key Features
 
-## ✨ Características Principais
+· Intuitive Drag-and-Drop Interface: Drag and drop cards between columns with visual feedback
+· Multiple Project Boards: Organize different projects in separate boards
+· Advanced Data Persistence: Auto-save system with localStorage backup
+· Responsive & Accessible Design: Adaptive interface that works on desktop and mobile
+· Elegant Dark Theme: Dark mode with carefully selected color palette
+· Contextual Menu: Quick actions with right-click for efficient management
+· Notification System: Alerts and confirmations for important actions
+· Advanced Customization: CSS variables for complete appearance customization
 
-· Interface Drag-and-Drop Intuitiva: Arraste e solte cartões entre colunas com feedback visual
-· Múltiplos Quadros de Projeto: Organize diferentes projetos em quadros separados
-· Persistência de Dados Avançada: Sistema de auto-save com backup no localStorage
-· Design Responsivo e Acessível: Interface adaptável que funciona em desktop e mobile
-· Tema Escuro Elegante: Modo escuro com paleta de cores cuidadosamente selecionada
-· Menu Contextual Contextual: Ações rápidas com clique direito para gestão eficiente
-· Sistema de Notificações: Alertas e confirmações para ações importantes
-· Personalização Avançada: Variáveis CSS para customização completa da aparência
+🛠️ Tech Stack
 
+· HTML5: Semantic and accessible structure
+· CSS3: CSS variables, Flexbox, Grid, Animations and Transitions
+· JavaScript ES6+: Modules, Classes, LocalStorage API
+· Google Fonts: Be Vietnam Pro and Nunito for modern typography
 
+---
 
+📁 Project Structure
 
-## Pré-requisitos
+```
+kards/
+├── index.html          # Application entry point
+├── style.css           # Design styles and variables
+├── script.js           # Main application logic
+├── components/         # Custom components (future)
+├── assets/             # Images and icons
+└── README.md           # Documentation
+```
 
-Navegadores suportados:
+---
+
+🚀 Quick Start
+
+Prerequisites
+
+Supported browsers:
 
 · Chrome 60+
 · Firefox 55+
 · Safari 12+
 · Edge 79+
 
-Instalação
+Installation
 
-1. Clone o repositório
+1. Clone the repository
    ```bash
-   git clone https://github.com/seu-usuario/kards.git
+   git clone https://github.com/your-username/kards.git
    cd kards
    ```
-2. Instalação com npm (opcional para desenvolvimento)
+2. Optional npm installation (for development)
    ```bash
    npm install
    ```
-3. Abrir a aplicação
-   · Abra o arquivo index.html em seu navegador
-   · Ou utilize um servidor local para desenvolvimento:
+3. Open the application
+   · Open the index.html file in your browser
+   · Or use a local server for development:
    ```bash
-   # Com Python
+   # With Python
    python -m http.server 8000
    
-   # Com Node.js
+   # With Node.js
    npx http-server
    ```
 
-## Utilização Rápida
+Quick Usage Guide
 
-1. Criar seu primeiro quadro:
-   · Clique no menu de navegação (☰)
-   · Insira um nome no campo "Novo Quadro"
-   · Clique em "+" ou pressione Enter
-2. Adicionar cartões:
-   · Use o campo de texto abaixo do título do quadro
-   · Clique em "+" ou pressione Enter para confirmar
-3. Gerenciar tarefas:
-   · Clique para marcar/desmarcar tarefas
-   · Arraste para reorganizar itens
-   · Use o ícone de lixeira para excluir
-
----
-
-
-## 🛠️ Tecnologias Utilizadas
-
-· HTML5: Estrutura semântica e acessível
-· CSS3: Variáveis CSS, Flexbox, Grid, Animações e Transições
-· JavaScript ES6+: Módulos, Classes, LocalStorage API
-· Google Fonts: Be Vietnam Pro e Nunito para tipografia moderna
+1. Create your first board:
+   · Click the navigation menu (☰)
+   · Enter a name in the "New Board" field
+   · Click "+" or press Enter
+2. Add cards:
+   · Use the text field below the board title
+   · Click "+" or press Enter to confirm
+3. Manage tasks:
+   · Click to mark/unmark tasks
+   · Drag to reorganize items
+   · Use the trash icon to delete
 
 ---
 
-## 📁 Estrutura do Projeto
+⚙️ Features
 
-```
-kards/
-├── index.html          # Ponto de entrada da aplicação
-├── style.css           # Estilos e variáveis de design
-├── script.js           # Lógica principal da aplicação
-├── components/         # Componentes personalizados (futuro)
-├── assets/             # Imagens e ícones
-└── README.md           # Documentação
-```
----
+Board Management
 
-## ⚙️ Funcionalidades
+· Creation and deletion of multiple boards
+· Navigation between boards with state persistence
+· Individual board customization
 
-Gestão de Quadros
+Card System
 
-· Criação e exclusão de quadros múltiplos
-· Navegação entre quadros com persistência de estado
-· Personalização de quadros individuais
+· Draggable cards between columns
+· Inline editing of titles and descriptions
+· One-click card duplication
+· Context menu with quick actions
 
-Sistema de Cartões
+Task Management
 
-· Cartões arrastáveis entre colunas
-· Edição inline de títulos e descrições
-· Duplicação de cartões com um clique
-· Menu contextual com ações rápidas
+· Marking tasks as completed
+· Reordering via drag-and-drop
+· Deletion with confirmation
+· Customizable labels and metadata
 
-Gestão de Tarefas
+Persistence System
 
-· Marcação de tarefas como concluídas
-· Reordenamento por drag-and-drop
-· Exclusão com confirmação
-· Labels e metadados personalizáveis
+· Configurable auto-save (default: 5 seconds)
+· Manual backup on demand
+· Data loss prevention with exit confirmation
 
-Sistema de Persistência
+User Interface
 
-· Auto-save configurável (padrão: 5 segundos)
-· Backup manual sob demanda
-· Prevenção de perda de dados com confirmação de saída
-
-Interface de Usuário
-
-· Design responsivo para todos os dispositivos
-· Tema escuro com variáveis CSS customizáveis
-· Animações e transições suaves
-· Feedback visual para todas as interações
+· Responsive design for all devices
+· Dark theme with customizable CSS variables
+· Smooth animations and transitions
+· Visual feedback for all interactions
 
 ---
 
-## 🔌 API e Estrutura de Dados
+🔌 API & Data Structure
 
-Estrutura do Objeto Principal
+Main Object Structure
 
 ```javascript
 {
@@ -174,30 +173,30 @@ Estrutura do Objeto Principal
 }
 ```
 
-Eventos do Sistema
+System Events
 
-O Kards implementa um barramento de eventos para comunicação entre componentes:
+Kards implements an event bus for component communication:
 
 ```javascript
-// Publicar evento
+// Publish event
 eventBus.publish({
   type: 'ADD_CARD', 
   laneId: 'lane1', 
-  card: {id: "C1", title: "Nova Tarefa"}
+  card: {id: "C1", title: "New Task"}
 });
 
-// Tipos de eventos suportados
+// Supported event types
 // ADD_CARD, UPDATE_CARD, REMOVE_CARD, MOVE_CARD
 // ADD_LANE, UPDATE_LANE, REMOVE_LANE, MOVE_LANE
 ```
 
 ---
 
-## 🎨 Personalização
+🎨 Customization
 
-Variáveis de Tema CSS
+CSS Theme Variables
 
-Personalize a aparência do Kards modificando as variáveis CSS:
+Customize Kards' appearance by modifying CSS variables:
 
 ```css
 :root {
@@ -221,9 +220,9 @@ Personalize a aparência do Kards modificando as variáveis CSS:
 }
 ```
 
-Componentes Customizáveis
+Custom Components
 
-Substitua componentes padrão por implementações personalizadas:
+Replace default components with custom implementations:
 
 ```javascript
 const components = {
@@ -235,22 +234,22 @@ const components = {
   NewLaneForm: CustomNewLaneForm
 };
 
-// Inicializar com componentes customizados
+// Initialize with custom components
 const board = new Board({
   data,
   components,
-  // ... outras opções
+  // ... other options
 });
 ```
 
 ---
 
-## 🧩 Desenvolvimento
+🧩 Development
 
-Estrutura de Classes
+Class Structure
 
 ```javascript
-// Classe principal do aplicativo
+// Main application class
 class KardsApp {
   constructor() {
     this.data = null;
@@ -258,14 +257,14 @@ class KardsApp {
     this.components = {};
   }
   
-  // Métodos principais
+  // Main methods
   init() {}
   loadData() {}
   saveData() {}
   render() {}
 }
 
-// Classe para gestão de quadros
+// Board management class
 class BoardManager {
   createBoard() {}
   deleteBoard() {}
@@ -273,7 +272,7 @@ class BoardManager {
   updateBoard() {}
 }
 
-// Classe para gestão de cartões
+// Card management class
 class CardManager {
   createCard() {}
   updateCard() {}
@@ -282,34 +281,58 @@ class CardManager {
 }
 ```
 
-Padrões de Desenvolvimento
+Development Patterns
 
-· Arquitetura: Component-based architecture
-· Gerenciamento de Estado: Centralized state container
-· Persistência: LocalStorage with serialization/deserialization
-· Eventos: Pub/Sub pattern for component communication
+· Architecture: Component-based architecture
+· State Management: Centralized state container
+· Persistence: LocalStorage with serialization/deserialization
+· Events: Pub/Sub pattern for component communication
 
---- 
+---
 
-## 🚀 Deploy
+🚀 Deployment
 
-Deploy em Produção
+Production Deployment
 
-1. Otimize os assets:
+1. Optimize assets:
    ```bash
-   # Minificar CSS
+   # Minify CSS
    npm install -g cssnano
    cssnano style.css style.min.css
    
-   # Minificar JavaScript
+   # Minify JavaScript
    npm install -g uglify-js
    uglifyjs script.js -o script.min.js -c -m
    ```
-2. Substitua no HTML:
+2. Replace in HTML:
    ```html
    <link rel="stylesheet" href="style.min.css">
    <script src="script.min.js"></script>
    ```
-3. Implante em seu servidor:
-   · Todos os arquivos necessários estão contidos na pasta do projeto
-   · Não há dependências externas além das fonts do Google
+3. Deploy to your server:
+   · All required files are contained in the project folder
+   · No external dependencies beyond Google Fonts
+
+---
+
+📄 License
+
+This project is open source and available under the MIT License.
+
+---
+
+🤝 Contributing
+
+Contributions, issues, and feature requests are welcome! Feel free to check issues page.
+
+---
+
+📞 Support
+
+If you have any questions or need support, please open an issue or contact us at support@kardsapp.com.
+
+---
+
+<p align="center">
+  Made with ❤️ by the Kards Team
+</p>
