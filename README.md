@@ -1,6 +1,6 @@
 <h1 align="center"> Kards - Trello Clone</h1>
 
-![Image](https://github.com/user-attachments/assets/c666a626-3e9f-46ee-b6c1-4d62a9a8f1c4)
+<img width="1521" height="575" alt="Image" src="https://github.com/user-attachments/assets/5d1d97fb-6e49-4046-9e31-57c0a2262b41" />
 
 
 ## 📋 Visão Geral do Projeto
