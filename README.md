@@ -1,4 +1,4 @@
-<h1 align="center" Kards - Trello Clone</h1>
+<h1 align="center">Kards - Trello Clone</h1>
 
 <p align="center">
   <img width="1521" height="575" alt="Kards App Screenshot" src="https://github.com/user-attachments/assets/5d1d97fb-6e49-4046-9e31-57c0a2262b41" />
