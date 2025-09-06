@@ -1,4 +1,4 @@
-Kards - Sistema Avançado de Gerenciamento de Tarefas Kanban
+<h1 align="center"> Kards - Trello Clone</h1>
 
 https://img.shields.io/badge/Kards-v1.5-0068FF?style=for-the-badge&logo=trello&logoColor=white https://img.shields.io/badge/Licença-MIT-green?style=for-the-badge https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript https://img.shields.io/badge/Persistência-LocalStorage-blue?style=for-the-badge&logo=html5
 
@@ -302,53 +302,3 @@ Hospedagem Recomendada
 · Vercel: Ideal para projetos estáticos
 · GitHub Pages: Gratuito para projetos open source
 · Servidor próprio: Apache/NGINX com gzip compression habilitado
-
-## ❓ FAQ
-
-Como faço para fazer backup dos meus dados?
-
-Os dados são automaticamente salvos no localStorage do seu navegador. Para backup manual, utilize a função de exportação em desenvolvimento.
-
-É possível usar o Kards offline?
-
-Sim, toda a aplicação funciona completamente offline após o carregamento inicial.
-
-Meus dados são sincronizados entre dispositivos?
-
-Não atualmente. A sincronização entre dispositivos está planejada para versões futuras.
-
-Como personalizo as cores do tema?
-
-Edite as variáveis CSS no arquivo style.css na seção :root.
-
-## 🗺️ Roadmap
-
-Versão 2.0 (Próxima Maior)
-
-· Sincronização em nuvem
-· API RESTful
-· Modo de exibição de calendário
-· Templates pré-definidos
-
-Versão 2.1
-
-· Integração com ferramentas de terceiros (Google Calendar, Slack)
-· Etiquetas e sistema de categorias
-· Lembretes e notificações push
-
-Versão 2.2
-
-· Relatórios e analytics
-· Modo de apresentação
-· Plugins e extensões
-
-Versão 3.0
-
-· Aplicativos móveis nativos (iOS e Android)
-· Funcionalidades de equipe e colaboração
-· Sistema de permissões e roles
-
-
----
-
-Kards - Organize. Priorize. Produza.
