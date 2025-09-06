@@ -23,10 +23,10 @@ Kards is a sophisticated web-based task management application built on the Kanb
 
 ## 🛠️ Tech Stack
 
-· HTML5: Semantic and accessible structure
-· CSS3: CSS variables, Flexbox, Grid, Animations and Transitions
-· JavaScript ES6+: Modules, Classes, LocalStorage API
-· Google Fonts: Be Vietnam Pro and Nunito for modern typography
+- HTML5: Semantic and accessible structure
+- CSS3: CSS variables, Flexbox, Grid, Animations and Transitions
+- JavaScript ES6+: Modules, Classes, LocalStorage API
+- Google Fonts: Be Vietnam Pro and Nunito for modern typography
 
 ---
 
@@ -50,10 +50,10 @@ Prerequisites
 
 Supported browsers:
 
-· Chrome 60+
-· Firefox 55+
-· Safari 12+
-· Edge 79+
+- Chrome 60+
+- Firefox 55+
+- Safari 12+
+- Edge 79+
 
 Installation
 
@@ -67,7 +67,7 @@ Installation
    npm install
    ```
 3. Open the application
-   · Open the index.html file in your browser
+   - Open the index.html file in your browser
    · Or use a local server for development:
    ```bash
    # With Python
@@ -80,16 +80,16 @@ Installation
 Quick Usage Guide
 
 1. Create your first board:
-   · Click the navigation menu (☰)
-   · Enter a name in the "New Board" field
-   · Click "+" or press Enter
+   - Click the navigation menu (☰)
+   - Enter a name in the "New Board" field
+   - Click "+" or press Enter
 2. Add cards:
-   · Use the text field below the board title
-   · Click "+" or press Enter to confirm
+   - Use the text field below the board title
+   - Click "+" or press Enter to confirm
 3. Manage tasks:
-   · Click to mark/unmark tasks
-   · Drag to reorganize items
-   · Use the trash icon to delete
+   - Click to mark/unmark tasks
+   - Drag to reorganize items
+   - Use the trash icon to delete
 
 ---
 
@@ -97,36 +97,36 @@ Quick Usage Guide
 
 Board Management
 
-· Creation and deletion of multiple boards
-· Navigation between boards with state persistence
-· Individual board customization
+- Creation and deletion of multiple boards
+- Navigation between boards with state persistence
+- Individual board customization
 
 Card System
 
-· Draggable cards between columns
-· Inline editing of titles and descriptions
-· One-click card duplication
-· Context menu with quick actions
+- Draggable cards between columns
+- Inline editing of titles and descriptions
+- One-click card duplication
+- Context menu with quick actions
 
 Task Management
 
-· Marking tasks as completed
-· Reordering via drag-and-drop
-· Deletion with confirmation
-· Customizable labels and metadata
+- Marking tasks as completed
+- Reordering via drag-and-drop
+- Deletion with confirmation
+- Customizable labels and metadata
 
 Persistence System
 
-· Configurable auto-save (default: 5 seconds)
-· Manual backup on demand
-· Data loss prevention with exit confirmation
+- Configurable auto-save (default: 5 seconds)
+- Manual backup on demand
+- Data loss prevention with exit confirmation
 
 User Interface
 
-· Responsive design for all devices
-· Dark theme with customizable CSS variables
-· Smooth animations and transitions
-· Visual feedback for all interactions
+- Responsive design for all devices
+- Dark theme with customizable CSS variables
+- Smooth animations and transitions
+- Visual feedback for all interactions
 
 ---
 
