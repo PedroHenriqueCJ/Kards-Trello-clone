@@ -199,40 +199,6 @@ Safari 12+ ✅ Fully Supported
 Edge 79+ ✅ Fully Supported
 
 ---
-## 🤝 Contributing
-
-We welcome contributions from the community! Please see our Contributing Guidelines for details.
-
-1. Fork the repository
-2. Create a feature branch (git checkout -b feature/amazing-feature)
-3. Commit your changes (git commit -m 'Add amazing feature')
-4. Push to the branch (git push origin feature/amazing-feature)
-5. Open a Pull Request
-
-Development Setup
-
-```bash
-# Install live server (optional)
-npm install -g live-server
-
-# Run development server
-live-server --port=8000
-```
-
----
-
-## 🗺️ Roadmap
-
-· Board exporting/importing functionality (JSON format)
-· Advanced filtering and search across all boards
-· Custom themes and styling options with theme editor
-· Mobile application development with React Native
-· Collaborative features with real-time synchronization
-· Plugin system for extending functionality
-· Integration API for third-party services
-· Advanced analytics with productivity insights
-
----
 
 Kards - Professional task management made simple. Built with modern web standards and attention to detail.
 
