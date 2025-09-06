@@ -2,11 +2,11 @@ Kards - Sistema Avançado de Gerenciamento de Tarefas Kanban
 
 https://img.shields.io/badge/Kards-v1.5-0068FF?style=for-the-badge&logo=trello&logoColor=white https://img.shields.io/badge/Licença-MIT-green?style=for-the-badge https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript https://img.shields.io/badge/Persistência-LocalStorage-blue?style=for-the-badge&logo=html5
 
-📋 Visão Geral do Projeto
+## 📋 Visão Geral do Projeto
 
 Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada na metodologia Kanban. Desenvolvida com tecnologias modernas, oferece uma experiência intuitiva e altamente produtiva para organização de projetos e fluxos de trabalho.
 
-✨ Características Principais
+## ✨ Características Principais
 
 · Interface Drag-and-Drop Intuitiva: Arraste e solte cartões entre colunas com feedback visual
 · Múltiplos Quadros de Projeto: Organize diferentes projetos em quadros separados
@@ -18,9 +18,9 @@ Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada n
 · Personalização Avançada: Variáveis CSS para customização completa da aparência
 
 
-🏁 Começando
 
-Pré-requisitos
+
+## Pré-requisitos
 
 Navegadores suportados:
 
@@ -51,7 +51,7 @@ Instalação
    npx http-server
    ```
 
-Utilização Rápida
+## Utilização Rápida
 
 1. Criar seu primeiro quadro:
    · Clique no menu de navegação (☰)
@@ -65,14 +65,14 @@ Utilização Rápida
    · Arraste para reorganizar itens
    · Use o ícone de lixeira para excluir
 
-🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 
 · HTML5: Estrutura semântica e acessível
 · CSS3: Variáveis CSS, Flexbox, Grid, Animações e Transições
 · JavaScript ES6+: Módulos, Classes, LocalStorage API
 · Google Fonts: Be Vietnam Pro e Nunito para tipografia moderna
 
-📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 
 ```
 kards/
@@ -84,7 +84,7 @@ kards/
 └── README.md           # Documentação
 ```
 
-⚙️ Funcionalidades
+## ⚙️ Funcionalidades
 
 Gestão de Quadros
 
@@ -119,7 +119,7 @@ Interface de Usuário
 · Animações e transições suaves
 · Feedback visual para todas as interações
 
-🔌 API e Estrutura de Dados
+## 🔌 API e Estrutura de Dados
 
 Estrutura do Objeto Principal
 
@@ -179,7 +179,7 @@ eventBus.publish({
 // ADD_LANE, UPDATE_LANE, REMOVE_LANE, MOVE_LANE
 ```
 
-🎨 Personalização
+## 🎨 Personalização
 
 Variáveis de Tema CSS
 
@@ -229,7 +229,7 @@ const board = new Board({
 });
 ```
 
-🧩 Desenvolvimento
+## 🧩 Desenvolvimento
 
 Estrutura de Classes
 
@@ -273,7 +273,7 @@ Padrões de Desenvolvimento
 · Persistência: LocalStorage with serialization/deserialization
 · Eventos: Pub/Sub pattern for component communication
 
-🚀 Deploy
+## 🚀 Deploy
 
 Deploy em Produção
 
@@ -303,7 +303,7 @@ Hospedagem Recomendada
 · GitHub Pages: Gratuito para projetos open source
 · Servidor próprio: Apache/NGINX com gzip compression habilitado
 
-❓ FAQ
+## ❓ FAQ
 
 Como faço para fazer backup dos meus dados?
 
@@ -321,7 +321,7 @@ Como personalizo as cores do tema?
 
 Edite as variáveis CSS no arquivo style.css na seção :root.
 
-🗺️ Roadmap
+## 🗺️ Roadmap
 
 Versão 2.0 (Próxima Maior)
 
@@ -352,5 +352,3 @@ Versão 3.0
 ---
 
 Kards - Organize. Priorize. Produza.
-
-Desenvolvido com ❤️ por Alan
