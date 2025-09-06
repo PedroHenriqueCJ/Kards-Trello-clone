@@ -1,148 +1,183 @@
 <h1 align="center">🗂️ Kards - Trello Clone</h1>
 
+<p align="center">
+  <i>A lightweight, production-ready kanban board for professional task management.</i>
+</p>
 
-![Preview do Projeto](./Kards-Trello-clone/Screenshot.jpg)
+<p align="center">
+  <img src="./Kards-Trello-clone/Screenshot.jpg" alt="Preview do Projeto" width="700"/>
+</p>
 
-<div align="center">
+<p align="center">
+  <a href="https://img.shields.io/badge/Version-1.5-blue"><img src="https://img.shields.io/badge/Version-1.5-blue" alt="Version"></a>
+  <a href="https://img.shields.io/badge/Build-Passing-brightgreen"><img src="https://img.shields.io/badge/Build-Passing-brightgreen" alt="Build Status"></a>
+  <a href="https://img.shields.io/badge/License-MIT-green"><img src="https://img.shields.io/badge/License-MIT-green" alt="License"></a>
+  <a href="https://img.shields.io/badge/Dependencies-None-success"><img src="https://img.shields.io/badge/Dependencies-None-success" alt="Dependencies"></a>
+  <a href="https://img.shields.io/badge/Size-50KB-lightgrey"><img src="https://img.shields.io/badge/Size-50KB-lightgrey" alt="Size"></a>
+  <a href="https://img.shields.io/badge/Contributions-Welcome-brightgreen"><img src="https://img.shields.io/badge/Contributions-Welcome-brightgreen" alt="Contributions"></a>
+</p>
 
-https://img.shields.io/badge/Version-1.5-blue https://img.shields.io/badge/Build-Passing-brightgreen https://img.shields.io/badge/License-MIT-green https://img.shields.io/badge/Dependencies-None-success https://img.shields.io/badge/Size-50KB-lightgrey https://img.shields.io/badge/Contributions-Welcome-brightgreen
+<p align="center">
+  <a href="#demo">Live Demo</a> • 
+  <a href="#report-bug">Report Bug</a> • 
+  <a href="#request-feature">Request Feature</a>
+</p>
 
-A sophisticated, production-ready kanban board application for professional task management.
-
-Live Demo | Report Bug | Request Feature
-
-</div>
+---
 
 ## 📋 Table of Contents
-
-· Overview
-· Key Features
-· Quick Start
-· Architecture
-· Usage Guide
-· API Reference
-· Performance
-· Browser Support
-· Contributing
-· License
-· Support
+- [Overview](#-overview)
+- [Key Features](#-key-features)
+- [Quick Start](#-quick-start)
+- [Architecture](#-architecture)
+- [Usage Guide](#-usage-guide)
+- [Configuration](#-configuration)
+- [API Reference](#-api-reference)
+- [Performance](#-performance)
+- [Browser Support](#-browser-support)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Support](#-support)
 
 ---
 
 ## 🎯 Overview
 
-Kards is an enterprise-grade kanban board application built with pure HTML5, CSS3, and vanilla JavaScript. Designed for professional task management, it offers a seamless Trello-like experience with zero dependencies, making it lightweight, fast, and secure.
+Kards é um **kanban board enterprise-grade** construído com **HTML5, CSS3 e JavaScript puro**. Ideal para gerenciamento de tarefas profissional, ele oferece uma experiência **similar ao Trello**, porém **100% sem dependências**, garantindo performance máxima, segurança e personalização fácil.
 
-Why Kards? - Unlike other kanban solutions, Kards is completely dependency-free, ensuring maximum performance, security, and ease of customization for development teams.
+> **Por que Kards?**  
+> Diferente de outras soluções, Kards não depende de bibliotecas externas. É **leve, rápido e seguro**, perfeito para equipes de desenvolvimento que buscam **eficiência e customização total**.
 
 ---
 
 ## ✨ Key Features
 
-· Multi-Board System: Create and manage unlimited kanban boards with unique configurations
-· Advanced Drag & Drop: Intuitive task management between cards with visual feedback
-· Real-time Auto-save: Configurable data persistence with 5-second intervals
-· Modern Dark UI: Professional interface with smooth animations and transitions
-· Local Storage: Secure client-side data storage with no external dependencies
-· Fully Responsive: Optimized experience across desktop and mobile devices
-· Context Menus: Right-click operations for efficient workflow management
-· Keyboard Shortcuts: Enhanced productivity with comprehensive key commands
-· Customizable: Easy theming through CSS variables and modular architecture
+- **Multi-Board System:** Crie e gerencie múltiplos boards com configurações únicas.
+- **Advanced Drag & Drop:** Reorganize tarefas de forma intuitiva com feedback visual.
+- **Real-time Auto-save:** Salve automaticamente os dados a cada 5 segundos.
+- **Modern Dark UI:** Interface profissional com animações suaves.
+- **Local Storage:** Armazenamento seguro no cliente, sem backend.
+- **Fully Responsive:** Design otimizado para desktop e mobile.
+- **Context Menus:** Operações rápidas com clique direito.
+- **Keyboard Shortcuts:** Produtividade aprimorada com atalhos completos.
+- **Customizable:** Personalize facilmente cores e layout via CSS variables.
 
 ---
 
 ## 🚀 Quick Start
 
-Prerequisites
+**Prerequisites**
 
-· Modern web browser (Chrome 60+, Firefox 55+, Safari 12+, Edge 79+)
-· Local server for development (optional but recommended)
+- Navegador moderno (Chrome 60+, Firefox 55+, Safari 12+, Edge 79+)
+- Servidor local opcional (recomendado)
 
-Installation
+**Installation**
 
-1. Clone the repository
-   ```bash
-   git clone https://github.com/yourusername/kards.git
-   cd kards
-   ```
-2. Serve locally using any HTTP server
-   ```bash
-   # Using Python
-   python -m http.server 8000
-   
-   # Using Node.js
-   npx http-server
-   
-   # Using PHP
-   php -S localhost:8000
-   ```
-3. Open in browser Navigate to http://localhost:8000 in your preferred browser.
+```bash
+git clone https://github.com/yourusername/kards.git
+cd kards
 
----
+Serve localmente
 
-## 🏗️ Architecture
+# Python
+python -m http.server 8000
 
-Core Components
+# Node.js
+npx http-server
 
-Component Purpose Implementation
-Board Management Multiple workspaces with unique configurations JavaScript Class-based system
-Card System Flexible containers for task organization DOM manipulation with event delegation
-Task Items Individual actionable items with completion tracking Custom data attributes and state management
-Data Persistence Robust localStorage integration JSON serialization/deserialization
+# PHP
+php -S localhost:8000
 
-Technical Stack
+Abra http://localhost:8000 no navegador.
 
-· Frontend: Pure HTML5, CSS3, Vanilla ES6+
-· Icons: Lucide Icons (SVG) for crisp rendering at any resolution
-· Fonts: Google Fonts (Be Vietnam Pro, Nunito) for optimal readability
-· Storage: Browser localStorage API with efficient data structures
-· Build Process: Zero dependencies, no build process required
 
 ---
 
-## 📋 Usage Guide
+🏗️ Architecture
 
-Basic Operations
+Component	Purpose	Implementation
 
-1. Create Board: Click sidebar → "Add Board..."
-2. Add Card: Use "Add Card..." input at bottom of interface
-3. Create Tasks: Click "+" button in any card
-4. Drag & Drop: Reorder tasks within/between cards
-5. Edit Content: Click on any title to modify text
-6. Mark Complete: Click task text to toggle completion status
+Board Management	Múltiplos workspaces	Classes JavaScript
+Card System	Contêiner flexível para tarefas	DOM + Event Delegation
+Task Items	Tarefas individuais com status de conclusão	Atributos customizados + State
+Data Persistence	Integração robusta com localStorage	JSON serialization/deserialization
 
-Keyboard Shortcuts
 
-Shortcut Action Description
-Enter Confirm input/creation Applies to all input fields
-Escape Cancel operations Closes modals and cancels edits
-Click + Drag Move tasks/cards Intuitive drag and drop interface
+Stack Técnica
 
-Context Menu Operations
+Frontend: HTML5, CSS3, JavaScript ES6+
 
-Right-click on any card to access powerful context menu options:
+Ícones: Lucide Icons (SVG)
 
-· Delete Card: Remove card and all its tasks (with confirmation)
-· Clear Card: Remove all tasks from card while preserving the card itself
-· Duplicate Card: Create identical copy with all tasks intact
+Fontes: Google Fonts (Be Vietnam Pro, Nunito)
+
+Armazenamento: localStorage
+
+Build: Zero dependências
+
+
 
 ---
 
-## ⚙️ Configuration
+📋 Usage Guide
+
+Operações Básicas
+
+1. Criar Board: Clique na sidebar → "Add Board..."
+
+
+2. Adicionar Card: Input "Add Card..." no final da interface
+
+
+3. Criar Tarefas: Clique no "+" dentro de qualquer card
+
+
+4. Drag & Drop: Reordenar tarefas/cards
+
+
+5. Editar Conteúdo: Clique no título para modificar
+
+
+6. Marcar como Concluído: Clique no texto da tarefa
+
+
+
+Atalhos de Teclado
+
+Atalho	Ação
+
+Enter	Confirmar criação/edição
+Escape	Cancelar operação
+Click+Drag	Mover tarefas/cards
+
+
+Menu de Contexto (Clique Direito)
+
+Delete Card: Remove card + tarefas
+
+Clear Card: Remove todas tarefas mantendo o card
+
+Duplicate Card: Cria cópia idêntica
+
+
+
+---
+
+⚙️ Configuration
 
 Settings Panel
 
-Access settings via the dropdown menu (⋮) in the header:
+Acesse via dropdown (⋮) no header:
 
-· Auto-save: Toggle automatic saving (5-second interval)
-· Data Persistence: Enable/disable localStorage functionality
-· Board Limits: Support for up to 512 individual boards
+Auto-save: On/Off
 
-Customization
+Data Persistence: Ativar/Desativar
 
-Theming can be customized by modifying CSS variables in the :root selector:
+Board Limits: Até 512 boards
 
-```css
+
+Customização via CSS
+
 :root {
   --app-container: #0068FF;
   --main-color: #1f1c2e;
@@ -151,61 +186,79 @@ Theming can be customized by modifying CSS variables in the :root selector:
   --link-color-hover: #c3cff4;
   --projects-section: #fff;
   --message-box-hover: #fafcff;
-  /* Additional customizable variables... */
 }
-```
 
-## 🔧 API Reference
-
-Core Methods
-
-```javascript
-// Data management
-saveData()          // Persist current state to localStorage
-loadData()          // Initialize application from storage
-
-// UI operations
-renderBoard(board)  // Display specific board with all cards
-createAlert(text)   // Show user notification with auto-dismiss
-createConfirmDialog(text, callback) // Display confirmation modal
-```
-
-Event Handling
-
-· Drag and drop operations: Full HTML5 Drag and Drop API implementation
-· Context menu interactions: Custom right-click handling with prevention of browser defaults
-· Keyboard events: Comprehensive keyboard support for accessibility
-· Click handlers: Efficient event delegation for dynamic content
 
 ---
 
-## 📊 Performance
+🔧 API Reference
 
-Kards is meticulously optimized for performance:
+// Data
+saveData()          // Salva estado atual no localStorage
+loadData()          // Carrega estado do storage
 
-· Efficient DOM updates: Minimal reflows and repaints through strategic rendering
-· Memory management: Proper event listener cleanup and garbage collection
-· Smooth animations: CSS transitions and transformations for 60fps performance
-· Fast load times: Minimal bundle size (~50KB) with instant initialization
+// UI
+renderBoard(board)  // Renderiza board específico
+createAlert(text)   // Notificação com auto-dismiss
+createConfirmDialog(text, callback) // Modal de confirmação
+
+Eventos
+
+Drag & Drop: HTML5 DnD API
+
+Context Menu: Custom right-click
+
+Keyboard: Full accessibility support
+
+Click Handlers: Event delegation
+
+
 
 ---
 
-## 🚦 Browser Support
+📊 Performance
 
-Browser Minimum Version Support Level
-Chrome 60+ ✅ Fully Supported
-Firefox 55+ ✅ Fully Supported
-Safari 12+ ✅ Fully Supported
-Edge 79+ ✅ Fully Supported
+DOM eficiente: Minimiza reflows e repaints
+
+Memory management: Cleanup de event listeners
+
+Animações suaves: CSS transitions/transformations 60fps
+
+Fast load: Bundle leve (~50KB)
+
+
 
 ---
 
-Kards - Professional task management made simple. Built with modern web standards and attention to detail.
+🚦 Browser Support
+
+Browser	Minimum Version	Support
+
+Chrome	60+	✅ Fully Supported
+Firefox	55+	✅ Fully Supported
+Safari	12+	✅ Fully Supported
+Edge	79+	✅ Fully Supported
+
+
+
+---
+
+🛠️ Contributing
+
+Contribuições são bem-vindas!
+Siga o padrão GitHub Fork → Branch → PR.
+
+
+---
+
+📄 License
+
+MIT License © Pedro Henrique Cerqueira de Jesus
+
+
+---
 
 <div align="center">
-
-Optimize your workflow with Kards
-
 ⬆ Back to Top
-
 </div>
+```
