@@ -1,7 +1,7 @@
 <h1 align="center">🗂️ Kards - Trello Clone</h1>
 
 
-![Preview do Projeto](./Screenshot.jpg)
+![Preview do Projeto](./Kards-Trello-clone/Screenshot.jpg)
 
 <div align="center">
 
@@ -177,7 +177,9 @@ Event Handling
 · Keyboard events: Comprehensive keyboard support for accessibility
 · Click handlers: Efficient event delegation for dynamic content
 
-📊 Performance
+---
+
+## 📊 Performance
 
 Kards is meticulously optimized for performance:
 
@@ -186,7 +188,9 @@ Kards is meticulously optimized for performance:
 · Smooth animations: CSS transitions and transformations for 60fps performance
 · Fast load times: Minimal bundle size (~50KB) with instant initialization
 
-🚦 Browser Support
+---
+
+## 🚦 Browser Support
 
 Browser Minimum Version Support Level
 Chrome 60+ ✅ Fully Supported
@@ -194,7 +198,8 @@ Firefox 55+ ✅ Fully Supported
 Safari 12+ ✅ Fully Supported
 Edge 79+ ✅ Fully Supported
 
-🤝 Contributing
+---
+## 🤝 Contributing
 
 We welcome contributions from the community! Please see our Contributing Guidelines for details.
 
@@ -214,18 +219,9 @@ npm install -g live-server
 live-server --port=8000
 ```
 
-📝 License
+---
 
-Distributed under the MIT License. See LICENSE for more information.
-
-📞 Support
-
-· Documentation: Comprehensive in-code comments and examples
-· Issue Tracking: GitHub Issues
-· Discussion Forum: GitHub Discussions
-· Email Support: support@kardsapp.com
-
-🗺️ Roadmap
+## 🗺️ Roadmap
 
 · Board exporting/importing functionality (JSON format)
 · Advanced filtering and search across all boards
