@@ -1,16 +1,16 @@
-Kards - Trello Clone
+<h1 align="center" Kards - Trello Clone</h1>
 
 <p align="center">
   <img width="1521" height="575" alt="Kards App Screenshot" src="https://github.com/user-attachments/assets/5d1d97fb-6e49-4046-9e31-57c0a2262b41" />
 </p>
 
-📋 Project Overview
+## 📋 Project Overview
 
 Kards is a sophisticated web-based task management application built on the Kanban methodology. Developed with modern technologies, it offers an intuitive and highly productive experience for project organization and workflow management.
 
 ---
 
-✨ Key Features
+## ✨ Key Features
 
 · Intuitive Drag-and-Drop Interface: Drag and drop cards between columns with visual feedback
 · Multiple Project Boards: Organize different projects in separate boards
@@ -21,7 +21,7 @@ Kards is a sophisticated web-based task management application built on the Kanb
 · Notification System: Alerts and confirmations for important actions
 · Advanced Customization: CSS variables for complete appearance customization
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 · HTML5: Semantic and accessible structure
 · CSS3: CSS variables, Flexbox, Grid, Animations and Transitions
@@ -30,7 +30,7 @@ Kards is a sophisticated web-based task management application built on the Kanb
 
 ---
 
-📁 Project Structure
+## 📁 Project Structure
 
 ```
 kards/
@@ -44,7 +44,7 @@ kards/
 
 ---
 
-🚀 Quick Start
+## 🚀 Quick Start
 
 Prerequisites
 
@@ -93,7 +93,7 @@ Quick Usage Guide
 
 ---
 
-⚙️ Features
+## ⚙️ Features
 
 Board Management
 
@@ -130,7 +130,7 @@ User Interface
 
 ---
 
-🔌 API & Data Structure
+## 🔌 API & Data Structure
 
 Main Object Structure
 
@@ -192,7 +192,7 @@ eventBus.publish({
 
 ---
 
-🎨 Customization
+## 🎨 Customization
 
 CSS Theme Variables
 
@@ -244,7 +244,7 @@ const board = new Board({
 
 ---
 
-🧩 Development
+## 🧩 Development
 
 Class Structure
 
@@ -290,7 +290,7 @@ Development Patterns
 
 ---
 
-🚀 Deployment
+## 🚀 Deployment
 
 Production Deployment
 
@@ -313,26 +313,3 @@ Production Deployment
    · All required files are contained in the project folder
    · No external dependencies beyond Google Fonts
 
----
-
-📄 License
-
-This project is open source and available under the MIT License.
-
----
-
-🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check issues page.
-
----
-
-📞 Support
-
-If you have any questions or need support, please open an issue or contact us at support@kardsapp.com.
-
----
-
-<p align="center">
-  Made with ❤️ by the Kards Team
-</p>
