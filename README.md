@@ -6,7 +6,7 @@
 
 ## 📋 Project Overview
 
->>> Kards is a sophisticated web-based task management application built on the Kanban methodology. Developed with modern technologies, it offers an intuitive and highly productive experience for project organization and workflow management.
+> Kards is a sophisticated web-based task management application built on the Kanban methodology. Developed with modern technologies, it offers an intuitive and highly productive experience for project organization and workflow management.
 
 ---
 
