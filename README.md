@@ -8,6 +8,7 @@ Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada n
 
 ---
 
+
 ## ✨ Características Principais
 
 · Interface Drag-and-Drop Intuitiva: Arraste e solte cartões entre colunas com feedback visual
@@ -68,6 +69,7 @@ Instalação
    · Use o ícone de lixeira para excluir
 
 ---
+
 
 ## 🛠️ Tecnologias Utilizadas
 
