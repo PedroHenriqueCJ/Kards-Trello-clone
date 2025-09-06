@@ -1,0 +1,729 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* Variáveis de cores 007AFF  0054ce */
+:root {
+    --app-container: #0068FF;
+    --main-color: #1f1c2e;
+    --secondary-color: #4A4A4A;
+    --link-color: #1f1c2e;
+    --link-color-hover: #c3cff4;
+    --link-color-active: #FFFFFF;
+    --link-color-active-bg: #1f1c2e;
+    --projects-section: #fff;
+    --message-box-hover: #fafcff;
+    --message-box-border: #e9ebf0;
+    --more-list-bg: #161a1d;
+    --more-list-bg-hover: #00FF68;
+    --more-list-shadow: rgba(209, 209, 209, 0.4);
+    --button-bg: #1f1c24;
+    --search-area-bg: #fff;
+    --star: #1ff1c2e;
+    --message-btn: #fff;
+}
+
+
+            .parent-card.dragging {
+                opacity: 0.5;
+                transform: rotate(5deg);
+            }
+            
+            .parent-card .card-title {
+                cursor: grab;
+            }
+            
+            .parent-card .card-title:active {
+                cursor: grabbing;
+            }
+            
+            .card-menu-icon,
+            .parent-card input,
+            .parent-card button,
+            .parent-card li span {
+                user-select: none;
+                -webkit-user-drag: none;
+                -khtml-user-drag: none;
+                -moz-user-drag: none;
+                -o-user-drag: none;
+            }
+            
+            .card-menu-icon {
+                cursor: pointer;
+                padding: 4px;
+                border-radius: 4px;
+                margin-left: 8px;
+            }
+            
+            .card-menu-icon:hover {
+                background-color: #e0e0e0;
+            }
+
+/* Estilos do dropdown */
+.dropdown-container {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*transform: rotate(90deg); */
+}
+
+.dropbtn svg {
+    width: 20px;
+    height: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #191919;
+    border: 1px solid #8C8C8C;
+    min-width: 200px;
+    z-index: 1;
+    border-radius: 11px;
+    overflow: hidden;
+}
+
+.dropdown-content.show {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+.dropdown-item {
+    color: white;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.dropdown-item:hover {
+    background-color: #353535;
+}
+
+.dropdown-item i {
+    margin-right: 10px;
+}
+
+.dropdown-item .switch {
+    margin-left: 10px;
+}
+
+/* Animação */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.card-menu-icon {
+  cursor: pointer;
+  color: #D3D3D3;
+  margin-left: 8px;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+
+.card-menu-icon:hover {
+  opacity: 1;
+}
+
+.card-menu-icon svg {
+  width: 18px;
+  height: 18px;
+  vertical-align: middle;
+}
+
+
+
+/* Estilo ultra refinado para o menu de contexto */ 
+#card-context-menu { 
+  position: absolute; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px 0; z-index: 1000;
+  display: none; 
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+  min-width: 200px; overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  animation: fadeIn 0.2s ease-out;
+  border: 1px solid rgba(0, 0, 0, 0.08); 
+}
+
+#card-context-menu div { 
+  padding: 14px 24px; 
+  cursor: pointer; 
+  color: #333; 
+  font-size: 15px; 
+  font-weight: 500;
+  transition: all 0.2s ease-in-out; 
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  border-radius: 6px; 
+}
+
+#card-context-menu div:hover { 
+  background-color: #007bff;
+  color: #ffffff; 
+  transform: scale(1.05); 
+}
+
+#card-context-menu div:active {
+  background-color: #0056b3;
+  transform: scale(0.98); 
+}
+
+#card-context-menu.visible {
+  display: block;
+}
+
+@keyframes fadeIn { from { opacity: 0; transform: translateY(-8px); } to { opacity: 1; transform: translateY(0); } }
+
+
+/* Modo escuro */
+
+
+/* Estilos gerais */
+body {
+    font-family: "Be Vietnam Pro", sans-serif;
+    background-color: var(--app-container);
+    height: 100%;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #101010;
+    border-radius: 10px;
+    border: 2px solid #222222;
+    overflow-x: hidden;
+    transition: width 0.5s;
+    padding-top: 4rem;
+}
+
+.sidenav p.is-title {
+    font-size: 1.5rem;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav p:hover {
+    color: var(--link-color-hover);
+}
+
+.sidenav > ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* barra */
+.sidenav > ul > li {
+    font-size: 1rem;
+    color: #FFFFFF;
+    background-color: #151515;
+    border: 2px solid #2D2D2D;
+    font-family: 'Nunito', sans-serif;
+    padding: 0.9rem;
+    margin-inline: 1em;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.sidenav > ul > li.is-active {
+    box-shadow: 3px 3px var(--star);
+}
+
+.sidenav > ul > li.is-active:hover {
+    
+}
+
+.sidenav > ul > li:hover {
+    color: var(--link-color-hover);
+    cursor: pointer;
+}
+
+.sidenav #sidebar-close {
+    color: gray;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.25rem;
+    margin-left: 50px;
+}
+
+.container {
+    width: 100%;
+    margin-inline: auto;
+    overflow-x: auto; /* Permite rolagem se necessário */
+    min-height: 85%;
+    /* Esconde a barra de scroll */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE e Edge */
+}
+
+/* Chrome, Safari e Opera */
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+#cards-container {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 0.85rem;
+}
+/* borda */
+.parent-card {
+    flex-shrink: 0;
+    padding: 1rem 0.5rem;
+    background-color: #050505;
+    border: 0px solid #262626;
+    color: #FFFFFF;
+    border-radius: 16px;
+    width: 19.5rem;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    color: #FFFFFF;
+    padding-left: 7px; /* Ajuste conforme necessário */
+}
+
+.item-title {
+    font-size: 1rem;
+    color: #FFFFFF;
+}
+.parent-card > ul {
+    max-height: 41rem;
+    overflow-y: auto;
+    padding-left: 0;
+    list-style: none;
+    /* Adicione estas linhas para esconder a barra de scroll */
+    scrollbar-width: none; /* Para Firefox */
+    -ms-overflow-style: none; /* Para IE e Edge */
+}
+
+.parent-card > ul::-webkit-scrollbar {
+    display: none; /* Para Chrome, Safari e Opera */
+}
+
+.parent-card > span {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* aqui */
+.parent-card>ul>li {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  font-weight: 610;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border: 1px solid #202020;
+  background-color: #111111;
+  padding: 1.7rem;
+  color: white;
+  margin-right: 0.0em;
+  margin-bottom: 0.8rem;
+  border-radius: 10px;
+  width: 15.9rem;
+}
+
+.parent-card > ul > li > span svg {
+  width: 20px; /* Ajustado para um tamanho mais equilibrado */
+  height: 20px;
+  display: inline-flex; /* Flex para melhor alinhamento */
+  align-items: center;
+  justify-content: center;
+  padding: 5px; /* Melhor controle do espaçamento interno */
+  vertical-align: middle;
+  margin-top: -3px; /* Pequeno ajuste para um melhor alinhamento */
+}
+ /* lixo */
+.parent-card > ul > li > span {
+    letter-spacing: 0.7rem;
+}
+
+.fa {
+    display: block;
+    left: 50%;
+}
+
+.fa:hover, #sidebar-button:hover {
+    cursor: pointer;
+    color: #42445A;
+}
+
+.parent-card > ul > li > p {
+    margin: 0;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-fix {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    margin: 15.936px 0px;
+}
+
+.unselectable {
+    user-select: none;
+}
+
+#title {
+    margin: 0;
+    font-weight: 600;
+    padding-inline: 1rem;
+    color: #FFFFFF;
+    margin-right: 20px;
+}
+
+input[type="text"] {
+    border: none;
+    color: #FFFFFF;
+    border-bottom: 2px solid var(--main-color);
+    font-size: 1em;
+    width: 15rem;
+    background-color: transparent;
+}
+
+input[type="text"]:focus {
+    border: none;
+    border-bottom: 2px solid var(--link-color-hover);
+    outline: none;
+}
+
+#add-card > input[type="text"]::placeholder {
+    color: #000000;
+}
+
+#add-card > input[type="text"]:focus {
+    border: none;
+    border-bottom: 2px solid var(--link-color-active);
+    outline: none;
+}
+
+#add-board-button {
+    border: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: var(--button-bg);
+    color: var(--link-color-active);
+    padding: 0.5em 1em;
+    margin-bottom: 2rem;
+}
+
+#add-board-button:hover {
+    cursor: pointer;
+    color: var(--link-color-active);
+    box-shadow: 0px 2px var(--link-color-active);
+}
+
+#add-board-text {
+    width: 100%;
+    color: var(--main-color);
+}
+
+.plus-button {
+    border: none;
+    font-size: 1.5em;
+    border-radius: 100%;
+    background-color: #121212;
+    border: px solid #262626;
+    color: var(--link-color-active);
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.plus-button:hover {
+    background-color: var(--link-color-hover);
+}
+/* puta */
+.header-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0.7rem;
+  margin-bottom: 1rem;
+  
+  position: sticky;
+  top: 0;
+  background: rgba(16, 16, 16, 0.3);
+  /*padding: 1rem 0; */
+}
+
+.flex-col {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/* Context Menu */
+/* Estilo ultra refinado para o menu de contexto */ 
+#card-context-menu { 
+  position: absolute; 
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 8px 0; 
+  z-index: 1000;
+  display: none; 
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.2);
+  min-width: 200px; 
+  overflow: hidden;
+  font-family: "Nunito", sans-serif;
+  animation: fadeIn 0.2s ease-out;
+  border: 1px solid rgba(0, 0, 0, 0.08); 
+}
+
+#card-context-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#card-context-menu li { 
+  padding: 14px 24px; 
+  cursor: pointer; 
+  color: #333; 
+  font-size: 15px; 
+  font-weight: 500;
+  transition: all 0.2s ease-in-out; 
+  display: flex;
+  align-items: center;
+  gap: 12px; 
+  border-radius: 6px; 
+  margin: 0;
+}
+
+#card-context-menu li:hover { 
+  background-color: #007bff;
+  color: #ffffff; 
+  transform: scale(1.05); 
+}
+
+#card-context-menu li:active {
+  background-color: #0056b3;
+  transform: scale(0.98); 
+}
+
+#card-context-menu.visible {
+  display: block;
+}
+
+@keyframes fadeIn { 
+  from { opacity: 0; transform: translateY(-8px); } 
+  to { opacity: 1; transform: translateY(0); } 
+}
+#alert-container {
+    position: relative;
+}
+
+#alerts {
+    position: absolute;
+    bottom: 20px;
+    right: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.alert {
+    background-color: var(--projects-section);
+    color: var(--main-color);
+    padding-block: 0.2rem;
+    padding-inline: 2rem;
+    border-left: 5px solid var(--star);
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px var(--more-list-shadow);
+}
+
+.animate-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.35s, opacity 0.35s linear;
+}
+
+/* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 20%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.dialog-content {
+    background-color: var(--projects-section);
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    width: 30%;
+}
+
+.confirm-dialog-close {
+    color: #000000;
+    float: right;
+    font-size: 38px;
+    margin-top: -20px;
+    
+}
+
+.confirm-dialog-close:hover,
+.confirm-dialog-close:focus {
+    color: var(--main-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.confirm-dialog-actions {
+    margin-top: 2rem;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.confirm-dialog-cancel {
+    border: none;
+    background-color: inherit;
+    padding: 7px 14px;
+    cursor: pointer;
+    display: inline-block;
+    color: #000000;
+}
+
+.confirm-dialog-confirm {
+    background-color: #151515;
+    border-radius: 7px;
+    padding: 7px 14px;
+    cursor: pointer;
+    color: var(--link-color-active);
+}
+
+#sidebar-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  color: #FFFFFF;
+  padding-inline: 7px;
+  margin-top: 3.5px;
+  margin-left: 6px;
+  padding-block: 7px;
+  border-radius: 7px;
+  height: fit-content;
+  line-height: 1;
+}
+/* texto */
+.title-actions-container {
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #151515;
+    padding-inline: 1rem;
+    border-radius: 11px;
+    border: 2px solid #1E1E1E;
+}
+.parent-card>ul>li.dragging {
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transform: rotate(2deg);
+  transition: transform 0.1s ease;
+}
+.auto-save-text {
+    font-size: 16px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 2rem;
+    height: 1.2rem;
+}
+
+.switch input {
+  color: #FF0000;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    left: 0.1rem;
+    bottom: 0.12rem;
+    background-color: #FFFFFF;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    transform: translateX(0.8rem);
+}
