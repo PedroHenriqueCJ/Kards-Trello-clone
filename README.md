@@ -2,7 +2,6 @@
 
 ![Image](https://github.com/user-attachments/assets/c666a626-3e9f-46ee-b6c1-4d62a9a8f1c4)
 
-https://img.shields.io/badge/Kards-v1.5-0068FF?style=for-the-badge&logo=trello&logoColor=white https://img.shields.io/badge/Licença-MIT-green?style=for-the-badge https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript https://img.shields.io/badge/Persistência-LocalStorage-blue?style=for-the-badge&logo=html5
 
 ## 📋 Visão Geral do Projeto
 
