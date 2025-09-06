@@ -17,21 +17,6 @@ Kards é uma aplicação web sofisticada para gerenciamento de tarefas baseada n
 · Sistema de Notificações: Alertas e confirmações para ações importantes
 · Personalização Avançada: Variáveis CSS para customização completa da aparência
 
-🚀 Índice
-
-1. Começando
-2. Tecnologias Utilizadas
-3. Estrutura do Projeto
-4. Funcionalidades
-5. API e Estrutura de Dados
-6. Personalização
-7. Desenvolvimento
-8. Deploy
-9. FAQ
-10. Roadmap
-11. Contribuição
-12. Licença
-13. Contato
 
 🏁 Começando
 
